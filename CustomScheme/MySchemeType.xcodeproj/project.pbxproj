@@ -26,7 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D20B02601ABAC62400AD654C /* CustomScheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomScheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20B02601ABAC62400AD654C /* CustomSchemeTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomSchemeTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20B02641ABAC62400AD654C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20B02651ABAC62400AD654C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D20B02661ABAC62400AD654C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 		D20B02611ABAC62400AD654C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D20B02601ABAC62400AD654C /* CustomScheme.app */,
+				D20B02601ABAC62400AD654C /* CustomSchemeTarget.app */,
 				D20B02731ABAC62400AD654C /* CustomSchemeTests.xctest */,
 			);
 			name = Products;
@@ -117,9 +117,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D20B025F1ABAC62400AD654C /* CustomScheme */ = {
+		D20B025F1ABAC62400AD654C /* CustomSchemeTarget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D20B027D1ABAC62400AD654C /* Build configuration list for PBXNativeTarget "CustomScheme" */;
+			buildConfigurationList = D20B027D1ABAC62400AD654C /* Build configuration list for PBXNativeTarget "CustomSchemeTarget" */;
 			buildPhases = (
 				D20B025C1ABAC62400AD654C /* Sources */,
 				D20B025D1ABAC62400AD654C /* Frameworks */,
@@ -129,9 +129,9 @@
 			);
 			dependencies = (
 			);
-			name = CustomScheme;
+			name = CustomSchemeTarget;
 			productName = CustomScheme;
-			productReference = D20B02601ABAC62400AD654C /* CustomScheme.app */;
+			productReference = D20B02601ABAC62400AD654C /* CustomSchemeTarget.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D20B02721ABAC62400AD654C /* CustomSchemeTests */ = {
@@ -158,8 +158,8 @@
 		D20B02581ABAC62300AD654C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
-				ORGANIZATIONNAME = isee15;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = RegmagiK;
 				TargetAttributes = {
 					D20B025F1ABAC62400AD654C = {
 						CreatedOnToolsVersion = 6.2;
@@ -170,9 +170,9 @@
 					};
 				};
 			};
-			buildConfigurationList = D20B025B1ABAC62400AD654C /* Build configuration list for PBXProject "CustomScheme" */;
+			buildConfigurationList = D20B025B1ABAC62400AD654C /* Build configuration list for PBXProject "MySchemeType" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -183,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D20B025F1ABAC62400AD654C /* CustomScheme */,
+				D20B025F1ABAC62400AD654C /* CustomSchemeTarget */,
 				D20B02721ABAC62400AD654C /* CustomSchemeTests */,
 			);
 		};
@@ -232,7 +232,7 @@
 /* Begin PBXTargetDependency section */
 		D20B02751ABAC62400AD654C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D20B025F1ABAC62400AD654C /* CustomScheme */;
+			target = D20B025F1ABAC62400AD654C /* CustomSchemeTarget */;
 			targetProxy = D20B02741ABAC62400AD654C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -257,20 +257,32 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -286,6 +298,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = CustomeScheme;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -298,13 +311,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -313,6 +336,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -321,6 +345,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = CustomeScheme;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -329,9 +354,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CustomScheme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.z.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -340,9 +367,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CustomScheme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.z.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -362,6 +391,7 @@
 				);
 				INFOPLIST_FILE = CustomSchemeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.z.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomScheme.app/Contents/MacOS/CustomScheme";
 			};
@@ -378,6 +408,7 @@
 				);
 				INFOPLIST_FILE = CustomSchemeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.z.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomScheme.app/Contents/MacOS/CustomScheme";
 			};
@@ -386,7 +417,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D20B025B1ABAC62400AD654C /* Build configuration list for PBXProject "CustomScheme" */ = {
+		D20B025B1ABAC62400AD654C /* Build configuration list for PBXProject "MySchemeType" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D20B027B1ABAC62400AD654C /* Debug */,
@@ -395,13 +426,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D20B027D1ABAC62400AD654C /* Build configuration list for PBXNativeTarget "CustomScheme" */ = {
+		D20B027D1ABAC62400AD654C /* Build configuration list for PBXNativeTarget "CustomSchemeTarget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D20B027E1ABAC62400AD654C /* Debug */,
 				D20B027F1ABAC62400AD654C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D20B02801ABAC62400AD654C /* Build configuration list for PBXNativeTarget "CustomSchemeTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +442,7 @@
 				D20B02821ABAC62400AD654C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
